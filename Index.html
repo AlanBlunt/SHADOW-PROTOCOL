@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHADOW PROTOCOL</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="game"></div>
+
+    <!-- Phaser 3 (bundled locally so the game works offline and on itch.io) -->
+    <script src"lib/phaser.min.js"></script>
+
+    <!-- Game code. ORDER MATTERS: file must be loaded before the files that use them. -->
+    <script src="src/config.js"></script>
+    <script src="src/systems/Save.js"></script>
+    <script src="src/systems/Mission.js"></script>
+    <script src="src/systems/Combat.js"></script>
+    <script src="src/entities/Player.js"></script>
+    <script src="src/entities/Enemy.js"></script>
+    <script src="src/scenes/BootScene.js"></script>
+    <script src="src/scenes/MenuScene.js"></script>
+    <script src="src/scenes/BaseLevel.js"></script>
+    <script src="src/scenes/Level1.js"></script>
+    <script src="src/scenes/Level2.js"></script>
+    <script src="src/scenes/Level3.js"></script>
+    <script src="src/scenes/GameOver.js"></script>
+    <script src="src/scenes/main.js"></script>
+</body>
+</html>
